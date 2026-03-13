@@ -42,7 +42,7 @@ Most companies use **ATS (Applicant Tracking Systems)** to filter resumes before
 
 # 🎥 Demo
 
-![ResumeSenseAI Demo](assets/demo.gif)
+![ResumeSenseAI Demo](src/assets/demo.gif)
 
 # 🛠 Tech Stack
 
