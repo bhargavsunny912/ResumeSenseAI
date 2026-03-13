@@ -103,27 +103,27 @@ The AI response is sent back to the extension UI and displayed to the user.
 ---
 
 # 🔄 Process Flow
-User Uploads Resume (PDF)/
-↓/
-Resume Stored in Chrome Storage
-↓/
-User Selects Job Description from Webpage
-↓/
+User Uploads Resume (PDF)\
+↓\
+Resume Stored in Chrome Storage\
+↓\
+User Selects Job Description from Webpage\
+↓\
 Resume + Job Description Sent to Backend
-↓/
-Base64 Resume → Buffer → Extract Text
-↓/
-Resume Text + JD Sent to Gemini AI
-↓/
-Gemini AI Analyzes the Data
-↓/
-ATS Score + Keywords + Suggestions Generated
-↓/
+↓\
+Base64 Resume → Buffer → Extract Text\
+↓\
+Resume Text + JD Sent to Gemini AI\
+↓\
+Gemini AI Analyzes the Data\
+↓\
+ATS Score + Keywords + Suggestions Generated\
+↓\
 Results Displayed in Chrome Extension UI
 
 ---
 
-#🚀 Future Improvements
+# 🚀 Future Improvements
 
 - DOCX resume support
 - Better ATS scoring algorithms
