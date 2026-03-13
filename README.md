@@ -123,7 +123,7 @@ Results Displayed in Chrome Extension UI
 
 ---
 
-###🚀 Future Improvements
+#🚀 Future Improvements
 
 - DOCX resume support
 - Better ATS scoring algorithms
