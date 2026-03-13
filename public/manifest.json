@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+
+  "name": "ResumeSense AI",
+  "version": "1.0",
+
+  "description": "Analyze how well your resume matches any job description instantly.",
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Resume Matcher"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "notifications"
+  ],
+
+  "host_permissions": [
+    "https://*/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
