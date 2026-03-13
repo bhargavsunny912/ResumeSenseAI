@@ -1,20 +1,136 @@
-<<<<<<< HEAD
-# ResumeSenseAI
-=======
-# React + Vite
+<p align="center">
+  <h1 align="center">🚀 ResumeSenseAI</h1>
+  <p align="center">
+    AI Powered ATS Resume Analyzer Chrome Extension
+  </p>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 📌 ResumeSenseAI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**ResumeSenseAI** is an AI-powered **Chrome Extension** that helps job seekers evaluate how well their resume matches a job description.
 
-## React Compiler
+It analyzes a **PDF resume** and a **selected job description from any webpage**, then generates an **ATS compatibility score**, identifies **matched and missing keywords**, and provides **improvement suggestions** to increase the chances of passing Applicant Tracking Systems (ATS).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 🎯 Main Goal
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> b433339 (Initial Commit)
+Most companies use **ATS (Applicant Tracking Systems)** to filter resumes before they reach recruiters.
+
+**ResumeSenseAI helps users:**
+
+- Compare their **resume with a job description**
+- Identify **ATS keyword matches**
+- Detect **missing skills**
+- Improve their resume for better ATS performance
+
+---
+
+# ✨ Features
+
+- 📊 **ATS Score Calculation**
+- 🔍 **Keyword Matching**
+- ❌ **Missing Keyword Detection**
+- 💡 **AI-Powered Resume Improvements**
+- 📄 **PDF Resume Upload**
+- 🌐 **Job Description Selection from Any Webpage**
+- ⚡ **Real-time AI Analysis using Gemini**
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Chrome Extension APIs
+- Manifest V3
+
+### Backend
+- Node.js
+- Express.js
+
+### AI Integration
+- Google **Gemini AI API**
+
+### Other Tools
+- Base64 Encoding
+- PDF Parsing
+- Git & GitHub
+
+---
+
+# ⚙️ How It Works
+
+### Step 1 — Upload Resume
+The user uploads their **PDF resume** inside the Chrome extension.
+
+### Step 2 — Resume Storage
+The resume is stored securely using **Chrome Storage**.
+
+### Step 3 — Select Job Description
+The user highlights a **job description from any webpage**.
+
+### Step 4 — Send Data to Backend
+The extension sends:
+
+- Resume (Base64 encoded)
+- Selected Job Description text
+
+to the backend server.
+
+### Step 5 — Resume Processing
+The backend processes the resume:
+
+1. Converts **Base64 → Buffer**
+2. Extracts **text from the PDF resume**
+3. Combines **Resume Text + Job Description**
+
+### Step 6 — AI Analysis
+The combined data is sent to **Gemini AI**, which analyzes:
+
+- ATS Score
+- Matched Keywords
+- Missing Keywords
+- Resume Improvement Suggestions
+
+### Step 7 — Results Displayed
+The AI response is sent back to the extension UI and displayed to the user.
+
+---
+
+# 🔄 Process Flow
+User Uploads Resume (PDF)
+↓
+Resume Stored in Chrome Storage
+↓
+User Selects Job Description from Webpage
+↓
+Resume + Job Description Sent to Backend
+↓
+Base64 Resume → Buffer → Extract Text
+↓
+Resume Text + JD Sent to Gemini AI
+↓
+Gemini AI Analyzes the Data
+↓
+ATS Score + Keywords + Suggestions Generated
+↓
+Results Displayed in Chrome Extension UI
+
+🚀 Future Improvements
+
+DOCX resume support
+
+Better ATS scoring algorithms
+
+Resume section analysis
+
+Skill gap visualization
+
+Resume rewriting suggestions
+
+Job portal integrations
